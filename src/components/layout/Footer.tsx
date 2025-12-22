@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter, Youtube, MapPin, Phone, Mail, Award } from "lucide-react";
+import logo from "@/assets/kidazzle-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,9 +13,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-6">
             <Link to="/" className="inline-block">
-              <span className="text-3xl font-bold">
-                KID<span className="text-secondary">azzle</span>
-              </span>
+              <img src={logo} alt="KIDazzle Academy" className="h-12 w-auto brightness-0 invert" />
             </Link>
             <p className="text-primary-foreground/80 leading-relaxed">
               Nurturing young minds through play-based learning and exceptional care since 2008.

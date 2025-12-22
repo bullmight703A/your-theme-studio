@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "@/assets/kidazzle-logo.png";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -50,10 +51,8 @@ const Header = () => {
       <div className="container-site">
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-1">
-            <span className="text-2xl md:text-3xl font-bold text-primary">
-              KID<span className="text-secondary">azzle</span>
-            </span>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="KIDazzle Academy" className="h-12 md:h-14 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
