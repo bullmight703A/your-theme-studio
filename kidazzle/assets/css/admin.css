@@ -1,0 +1,249 @@
+/* KIDazzle Admin Styles */
+
+.kidazzle-admin {
+    max-width: 1400px;
+}
+
+.kidazzle-stats {
+    display: flex;
+    gap: 1rem;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px 30px;
+    text-align: center;
+    min-width: 150px;
+}
+
+.stat-card--success {
+    background: linear-gradient(135deg, #d4edda, #c3e6cb);
+    border-color: #28a745;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #5850ec;
+    display: block;
+}
+
+.stat-card--success .stat-number {
+    color: #28a745;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Status badges */
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-new {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.status-contacted {
+    background: #fff3e0;
+    color: #f57c00;
+}
+
+.status-tour_scheduled {
+    background: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.status-tour_completed {
+    background: #e8f5e9;
+    color: #388e3c;
+}
+
+.status-enrolled {
+    background: #c8e6c9;
+    color: #2e7d32;
+}
+
+.status-not_interested {
+    background: #ffebee;
+    color: #c62828;
+}
+
+/* Forms */
+.kidazzle-form {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.form-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.form-col {
+    flex: 1;
+}
+
+.form-col h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #5850ec;
+    color: #333;
+}
+
+.kidazzle-form p {
+    margin-bottom: 15px;
+}
+
+.kidazzle-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.kidazzle-form select,
+.kidazzle-form input[type="text"],
+.kidazzle-form input[type="email"],
+.kidazzle-form input[type="tel"],
+.kidazzle-form input[type="datetime-local"],
+.kidazzle-form textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.kidazzle-form textarea {
+    resize: vertical;
+}
+
+/* AI Lesson Plans */
+.kidazzle-ai-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.ai-form-section,
+.ai-result-section {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.ai-form-section h2,
+.ai-result-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #5850ec;
+}
+
+.ai-result-box {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    min-height: 300px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.ai-result-box .placeholder-text {
+    color: #999;
+    font-style: italic;
+}
+
+.ai-result-box .lesson-content {
+    line-height: 1.8;
+}
+
+.ai-result-box h2,
+.ai-result-box h3 {
+    color: #5850ec;
+    margin-top: 20px;
+}
+
+#ai-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.button-hero {
+    padding: 12px 30px !important;
+    font-size: 16px !important;
+}
+
+/* Saved lessons */
+.saved-lesson-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.saved-lesson-card h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.lesson-meta {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.saved-lesson-card .lesson-content {
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.saved-lesson-card .lesson-content::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(transparent, #fff);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .kidazzle-ai-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .kidazzle-stats {
+        justify-content: center;
+    }
+}
