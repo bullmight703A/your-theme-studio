@@ -2,12 +2,12 @@
 
 A modern, vibrant WordPress theme for KIDazzle Academy - exceptional early childhood education centers.
 
-**Last Updated:** December 24, 2024
+**Last Updated:** December 31, 2024
 
 ## Theme Details
 
 - **Theme Name:** KIDazzle Academy
-- **Version:** 1.0.1
+- **Version:** 1.0.2
 - **Requires:** WordPress 6.0+
 - **Requires PHP:** 8.0+
 
