@@ -2,12 +2,27 @@
 
 A modern, vibrant WordPress theme for KIDazzle Academy - exceptional early childhood education centers.
 
-**Last Updated:** December 31, 2024
+**Last Updated:** December 31, 2024 (v1.0.3)
 
 ## Theme Details
 
 - **Theme Name:** KIDazzle Academy
-- **Version:** 1.0.2
+- **Version:** 1.0.3
+
+## Locations Included
+
+**Georgia (5 locations):**
+- College Park
+- West End  
+- Midtown
+- Hampton
+- Atlanta Federal Center (Downtown)
+
+**Tennessee:**
+- Memphis
+
+**Florida:**
+- Doral (Miami)
 - **Requires:** WordPress 6.0+
 - **Requires PHP:** 8.0+
 
