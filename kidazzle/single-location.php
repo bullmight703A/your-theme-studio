@@ -10,13 +10,14 @@ get_header();
 $location_slug = get_post_field('post_name', get_post());
 
 $locations = array(
+    // Georgia Locations
     'college-park' => array(
         'name' => 'College Park',
         'state' => 'GA',
+        'city_full' => 'College Park, GA 30337',
         'tagline' => 'Where little learners take flight.',
         'description' => 'Welcome to KIDazzle College Park. Located just a hop from Hartsfield-Jackson Airport, we serve families in the tri-cities area with a world of wonder inside. Our program emphasizes STEAM education and provides convenient transportation options.',
         'address' => '1701 Columbia Ave',
-        'city' => 'College Park, GA 30337',
         'phone' => '(404) 305-6950',
         'email' => 'collegepark@kidazzle.com',
         'features' => array(
@@ -24,15 +25,15 @@ $locations = array(
             array('icon' => 'flask-conical', 'title' => 'STEAM Focus', 'desc' => 'Science & Tech'),
             array('icon' => 'bus', 'title' => 'Transportation', 'desc' => 'School Pick-Up'),
         ),
-        'hero_image' => 'college-park-hero.jpg',
+        'region' => 'Georgia',
     ),
     'west-end' => array(
         'name' => 'West End',
         'state' => 'GA',
+        'city_full' => 'Atlanta, GA 30310',
         'tagline' => 'Nurturing young minds in historic West End.',
-        'description' => 'Welcome to KIDazzle West End. Located in the heart of historic West End Atlanta, we provide exceptional early childhood education with a focus on community and cultural enrichment.',
+        'description' => 'Welcome to KIDazzle West End. Located in the heart of historic West End Atlanta, we provide exceptional early childhood education with a focus on community and cultural enrichment. Our center serves the vibrant West End community with pride.',
         'address' => '858 Oak Street SW',
-        'city' => 'Atlanta, GA 30310',
         'phone' => '(404) 555-0123',
         'email' => 'westend@kidazzle.com',
         'features' => array(
@@ -40,15 +41,15 @@ $locations = array(
             array('icon' => 'palette', 'title' => 'Arts Program', 'desc' => 'Creative Expression'),
             array('icon' => 'users', 'title' => 'Small Classes', 'desc' => 'Individual Attention'),
         ),
-        'hero_image' => 'west-end-hero.jpg',
+        'region' => 'Georgia',
     ),
     'midtown' => array(
         'name' => 'Midtown',
         'state' => 'GA',
+        'city_full' => 'Atlanta, GA 30309',
         'tagline' => 'Excellence in the heart of the city.',
-        'description' => 'Welcome to KIDazzle Midtown. Our flagship location offers state-of-the-art facilities in the heart of Atlanta, perfect for busy professionals who want the best for their children.',
+        'description' => 'Welcome to KIDazzle Midtown. Our flagship Atlanta location offers state-of-the-art facilities in the heart of the city, perfect for busy professionals who want the best for their children. Experience premium early education in Midtown.',
         'address' => '1250 Peachtree Street NE',
-        'city' => 'Atlanta, GA 30309',
         'phone' => '(404) 555-0456',
         'email' => 'midtown@kidazzle.com',
         'features' => array(
@@ -56,7 +57,89 @@ $locations = array(
             array('icon' => 'clock', 'title' => 'Extended Hours', 'desc' => 'Flexible Schedule'),
             array('icon' => 'salad', 'title' => 'Organic Meals', 'desc' => 'Healthy Nutrition'),
         ),
-        'hero_image' => 'midtown-hero.jpg',
+        'region' => 'Georgia',
+    ),
+    'hampton' => array(
+        'name' => 'Hampton',
+        'state' => 'GA',
+        'city_full' => 'Hampton, GA 30228',
+        'tagline' => 'Growing bright futures in Henry County.',
+        'description' => 'Welcome to KIDazzle Hampton. Serving Henry County families with our signature blend of educational excellence and nurturing care. Our Hampton center provides a warm, welcoming environment for children to learn, grow, and thrive.',
+        'address' => '123 Main Street',
+        'phone' => '(770) 555-0789',
+        'email' => 'hampton@kidazzle.com',
+        'features' => array(
+            array('icon' => 'trees', 'title' => 'Outdoor Play', 'desc' => 'Nature Learning'),
+            array('icon' => 'book-open', 'title' => 'Literacy Focus', 'desc' => 'Early Reading'),
+            array('icon' => 'music', 'title' => 'Music Program', 'desc' => 'Creative Arts'),
+        ),
+        'region' => 'Georgia',
+    ),
+    'federal-center' => array(
+        'name' => 'Atlanta Federal Center',
+        'state' => 'GA',
+        'city_full' => 'Atlanta, GA 30303',
+        'tagline' => 'Downtown excellence for working families.',
+        'description' => 'Welcome to KIDazzle Atlanta Federal Center. Located in the heart of downtown Atlanta, we serve government employees and downtown professionals with convenient, high-quality child care. Our center provides a secure, nurturing environment steps from MARTA.',
+        'address' => '100 Alabama St SW',
+        'phone' => '(404) 555-1234',
+        'email' => 'federalcenter@kidazzle.com',
+        'features' => array(
+            array('icon' => 'train', 'title' => 'Near MARTA', 'desc' => 'Easy Commute'),
+            array('icon' => 'shield-check', 'title' => 'Secure Entry', 'desc' => 'Federal Standards'),
+            array('icon' => 'clock', 'title' => 'Government Hours', 'desc' => 'Flexible Schedule'),
+        ),
+        'region' => 'Georgia',
+    ),
+    // Tennessee Location
+    'memphis' => array(
+        'name' => 'Memphis',
+        'state' => 'TN',
+        'city_full' => 'Memphis, TN 38103',
+        'tagline' => 'Soul, rhythm, and rigor.',
+        'description' => 'Welcome to KIDazzle Memphis. Bringing our signature blend of educational excellence to the soul of Tennessee. Our Memphis center celebrates the rich cultural heritage of the city while providing world-class early childhood education.',
+        'address' => '456 Beale Street',
+        'phone' => '(901) 555-0001',
+        'email' => 'memphis@kidazzle.com',
+        'features' => array(
+            array('icon' => 'music', 'title' => 'Music Heritage', 'desc' => 'Cultural Arts'),
+            array('icon' => 'heart', 'title' => 'Community Roots', 'desc' => 'Local Focus'),
+            array('icon' => 'star', 'title' => 'Quality Rated', 'desc' => 'TN Excellence'),
+        ),
+        'region' => 'Tennessee',
+    ),
+    // Florida Location
+    'miami' => array(
+        'name' => 'Doral',
+        'state' => 'FL',
+        'city_full' => 'Doral, FL 33166',
+        'tagline' => 'Sunshine and STEM.',
+        'description' => 'Welcome to KIDazzle Doral. Our Florida location brings South Florida families our signature approach to early education with a special emphasis on STEM learning. Located in the vibrant Doral community, we celebrate diversity and bilingual education.',
+        'address' => '789 NW 87th Avenue',
+        'phone' => '(305) 555-0002',
+        'email' => 'doral@kidazzle.com',
+        'features' => array(
+            array('icon' => 'flask-conical', 'title' => 'STEM Focus', 'desc' => 'Science & Tech'),
+            array('icon' => 'languages', 'title' => 'Bilingual', 'desc' => 'English & Spanish'),
+            array('icon' => 'sun', 'title' => 'Outdoor Learning', 'desc' => 'Year-Round'),
+        ),
+        'region' => 'Florida',
+    ),
+    'doral' => array(
+        'name' => 'Doral',
+        'state' => 'FL',
+        'city_full' => 'Doral, FL 33166',
+        'tagline' => 'Sunshine and STEM.',
+        'description' => 'Welcome to KIDazzle Doral. Our Florida location brings South Florida families our signature approach to early education with a special emphasis on STEM learning. Located in the vibrant Doral community, we celebrate diversity and bilingual education.',
+        'address' => '789 NW 87th Avenue',
+        'phone' => '(305) 555-0002',
+        'email' => 'doral@kidazzle.com',
+        'features' => array(
+            array('icon' => 'flask-conical', 'title' => 'STEM Focus', 'desc' => 'Science & Tech'),
+            array('icon' => 'languages', 'title' => 'Bilingual', 'desc' => 'English & Spanish'),
+            array('icon' => 'sun', 'title' => 'Outdoor Learning', 'desc' => 'Year-Round'),
+        ),
+        'region' => 'Florida',
     ),
 );
 
@@ -81,7 +164,7 @@ $current_location = isset($locations[$location_slug]) ? $locations[$location_slu
                 <i data-lucide="map-pin"></i>
                 <i data-lucide="star"></i>
             </div>
-            <p class="location-state"><?php echo esc_html($current_location['city']); ?></p>
+            <p class="location-state"><?php echo esc_html($current_location['city_full']); ?></p>
             <h1><?php echo esc_html($current_location['name']); ?> Center</h1>
             <p class="tagline"><?php echo esc_html($current_location['tagline']); ?></p>
         </div>
@@ -114,7 +197,7 @@ $current_location = isset($locations[$location_slug]) ? $locations[$location_slu
                         <h2><i data-lucide="calendar"></i> Book a Tour</h2>
                         <div class="calendar-placeholder">
                             <i data-lucide="calendar-days"></i>
-                            <p>Calendar Embed Placeholder</p>
+                            <p>Paste <?php echo esc_html($current_location['name']); ?> Calendar Embed Here</p>
                             <!-- Add your booking calendar embed code here -->
                         </div>
                     </div>
@@ -133,8 +216,10 @@ $current_location = isset($locations[$location_slug]) ? $locations[$location_slu
                         <div class="contact-details">
                             <p>
                                 <i data-lucide="map-pin"></i>
-                                <?php echo esc_html($current_location['address']); ?><br>
-                                <?php echo esc_html($current_location['city']); ?>
+                                <span>
+                                    <?php echo esc_html($current_location['address']); ?><br>
+                                    <?php echo esc_html($current_location['city_full']); ?>
+                                </span>
                             </p>
                             <p>
                                 <i data-lucide="phone"></i>
@@ -154,11 +239,36 @@ $current_location = isset($locations[$location_slug]) ? $locations[$location_slu
                     <div class="questions-card">
                         <h2>Have Questions?</h2>
                         <div class="form-placeholder">
-                            <p>Contact Form Placeholder</p>
+                            <p>Embed Location Form Here</p>
                             <!-- Add your contact form shortcode here -->
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Locations -->
+    <section class="other-locations">
+        <div class="container">
+            <h2>Explore Other Locations</h2>
+            <div class="locations-grid">
+                <?php 
+                $count = 0;
+                foreach ($locations as $slug => $location) : 
+                    if ($slug !== $location_slug && $count < 3) : 
+                        $count++;
+                ?>
+                <a href="<?php echo home_url('/locations/' . $slug); ?>" class="location-preview-card">
+                    <span class="preview-state"><?php echo esc_html($location['state']); ?></span>
+                    <h3><?php echo esc_html($location['name']); ?></h3>
+                    <p><?php echo esc_html($location['tagline']); ?></p>
+                    <span class="preview-link">View Center <i data-lucide="arrow-right"></i></span>
+                </a>
+                <?php 
+                    endif;
+                endforeach; 
+                ?>
             </div>
         </div>
     </section>
@@ -293,7 +403,7 @@ $current_location = isset($locations[$location_slug]) ? $locations[$location_slu
     color: #FF6B35;
 }
 
-.about-card p {
+.about-card > p {
     color: #4b5563;
     line-height: 1.7;
     margin-bottom: 1.5rem;
@@ -382,6 +492,86 @@ $current_location = isset($locations[$location_slug]) ? $locations[$location_slu
 
 .contact-details a:hover {
     color: #FF6B35;
+}
+
+/* Other Locations Section */
+.other-locations {
+    padding: 4rem 0;
+    background: white;
+}
+
+.other-locations .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.other-locations h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.location-preview-card {
+    background: #f9fafb;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.location-preview-card:hover {
+    border-color: #FF6B35;
+    transform: translateY(-4px);
+}
+
+.preview-state {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #FF6B35;
+    text-transform: uppercase;
+}
+
+.location-preview-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0.5rem 0;
+}
+
+.location-preview-card p {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.preview-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #FF6B35;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.preview-link svg {
+    width: 14px;
+    height: 14px;
 }
 </style>
 
